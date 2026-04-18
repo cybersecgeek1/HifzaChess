@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Hifza's Chess — Learn Chess!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♞</text></svg>">
+</head>
+<body>
+
+  <!-- TOP PROGRESS BAR -->
+  <header id="topbar">
+    <button class="btn-home" id="btn-home" title="Home">🏠</button>
+    <span class="logo">♞ Hifza's Chess</span>
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <span class="progress-label" id="progress-label">1 / 9</span>
+    <button class="btn-home" id="btn-voice" title="Toggle voice">🔊</button>
+  </header>
+
+  <!-- HOME SCREEN -->
+  <div id="screen-home" class="screen">
+    <div class="home-hero">
+      <div class="home-icon">♞</div>
+      <h1>Hifza's Chess</h1>
+      <p>Learn chess step by step!</p>
+    </div>
+    <div class="chapter-grid" id="chapter-grid"></div>
+  </div>
+
+  <!-- LESSON SCREEN -->
+  <main id="main" class="screen hidden">
+
+    <!-- LEFT: LESSON PANEL -->
+    <aside id="lesson-panel">
+      <div class="mascot" id="mascot">🐴</div>
+      <div class="speech" id="speech"></div>
+      <button class="btn-primary" id="btn-next">Next →</button>
+      <button class="btn-secondary" id="btn-skip">Skip Chapter ⏭</button>
+      <div class="exercise-counter" id="exercise-counter"></div>
+    </aside>
+
+    <!-- RIGHT: BOARD -->
+    <section id="board-area">
+      <div class="board-outer">
+        <div class="rank-labels-outer" id="rank-labels-outer"></div>
+        <div class="board-col">
+          <div class="board-wrap">
+            <div id="board" class="board"></div>
+            <svg id="arrows" class="arrows-overlay" viewBox="0 0 800 800"></svg>
+          </div>
+          <div class="file-labels-outer" id="file-labels-outer"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CELEBRATION OVERLAY -->
+  <div class="overlay hidden" id="overlay-celebrate">
+    <div class="celebrate-card">
+      <div class="celebrate-icon" id="celebrate-icon">🎉</div>
+      <h2 id="celebrate-title">Amazing!</h2>
+      <p id="celebrate-text">You completed the exercise!</p>
+      <button class="btn-primary" id="btn-celebrate-next">Continue →</button>
+    </div>
+  </div>
+
+  <!-- CHAPTER COMPLETE OVERLAY -->
+  <div class="overlay hidden" id="overlay-chapter">
+    <div class="celebrate-card chapter-card">
+      <div class="celebrate-icon">👑</div>
+      <h2 id="chapter-title">Chapter Complete!</h2>
+      <p id="chapter-text">You've mastered the Rook!</p>
+      <button class="btn-primary" id="btn-chapter-next">Next Chapter →</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
